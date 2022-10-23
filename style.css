@@ -1,0 +1,529 @@
+html {
+  scroll-behavior: smooth;
+ /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+ para probar la diferencia con y sin scroll suavizado*/
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-image: url("https://d16xvuom8mr9m8.cloudfront.net/_next/static/images/hero-new-bg-9c6ffab8dbafe3227cf33ae1b357bd8e.jpg");
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*--------------------------- */
+
+.contenedor {
+  margin-top: 70px;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 90%;
+  max-width: 1200px;
+  padding: 40px;
+  border-radius: 10px;
+  height: 800px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  color: #5b4a9a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header .logo:hover {
+  border-bottom: 2px solid #f2f2f2c4;
+  color: #735dc2;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  font-size: 22px;
+  padding: 2px;
+  border-bottom: 2px solid transparent;
+  margin-left: 40px;
+  color: #5b4a9a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #f2f2f2c4;
+  color: #735dc2;
+}
+
+.contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 80px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-link {
+  margin-top: 100px;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 100px;
+  margin-right: 10px;
+  text-decoration: none;
+  background: #5b4a9a;
+  color: rgb(222, 212, 212);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  color: #fff;
+  background: #735dc2;
+}
+
+@media screen and (max-width: 915px) {
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main .contenedor-img {
+    margin-bottom: 40px;
+  }
+}
+
+.tittle {
+  animation: fluido 15s ease-in-out infinite;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+.sub-tittle {
+  color: rgb(0, 164, 164);
+}
+
+@keyframes fluido {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* ------------------------- */
+
+.filter {
+  width: 100%;
+  margin-top: 30px;
+  box-shadow: 0px 0px 25px rgba(79, 1, 139, 0.454);
+  backdrop-filter: blur(5px);
+  height: 100px;
+  background: #6441a55a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a084579,
+    #6441a57d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a0845aa, #6441a598);
+}
+
+/* -------------filosofos */
+
+.contenedor-2 {
+  background: #6441a5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a0845a7,
+    #6441a5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a084572,
+    #6441a5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  padding-top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filosofo1 {
+  box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.387);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 150px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: rgb(142, 142, 142);
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.center .filosofo5 {
+  box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.387);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background-color: rgb(142, 142, 142);
+}
+
+.center .mesa {
+  box-shadow: 20px 20px 30px rgba(16, 0, 113, 0.387);
+  background-color: #100343cb;
+  height: 500px;
+  width: 500px;
+  border-radius: 100%;
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+}
+
+.center .filosofo2 {
+  box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.387);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  border-radius: 100%;
+  width: 150px;
+  background-color: rgb(142, 142, 142);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+}
+
+.footer .filosofo4 {
+  box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.387);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  border-radius: 100%;
+  width: 150px;
+
+  background-color: rgb(142, 142, 142);
+}
+
+.footer .filosofo3 {
+  box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.387);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  border-radius: 100%;
+  width: 150px;
+  background-color: rgb(142, 142, 142);
+}
+
+.pensando {
+  display: flex;
+  box-shadow: 20px 20px 30px rgba(3, 56, 137, 0.387);
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 124, 213, 0.785);
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+
+.comiendo {
+  box-shadow: 20px 20px 30px rgba(119, 5, 5, 0.387);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(198, 0, 0, 0.822);
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+
+/* tenedores */
+
+.mesa .tenedor5 {
+  box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.387);
+  border-radius: 40%;
+  left: 30%;
+  top: 15%;
+  background-color: rgb(142, 142, 142);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(-50deg);
+}
+
+.cogido4 {
+  box-shadow: 20px 20px 30px rgba(161, 0, 0, 0.387);
+  border-radius: 40%;
+  left: 30%;
+  top: 15%;
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(-50deg);
+  background-color: rgba(198, 0, 0, 0.822);
+}
+
+.dejado4 {
+  box-shadow: 20px 20px 30px rgba(135, 128, 128, 0.387);
+  border-radius: 40%;
+  left: 30%;
+  top: 15%;
+  background-color: rgb(142, 142, 142);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(-50deg);
+}
+
+.mesa .tenedor1 {
+  box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.387);
+  border-radius: 40%;
+  right: 30%;
+  top: 15%;
+  background-color: rgb(142, 142, 142);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(50deg);
+}
+
+.cogido0 {
+  box-shadow: 20px 20px 30px rgba(161, 0, 0, 0.387);
+  border-radius: 40%;
+  right: 30%;
+  top: 15%;
+  background-color: rgba(198, 0, 0, 0.822);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(50deg);
+}
+
+.dejado0 {
+  box-shadow: 20px 20px 30px rgba(135, 128, 128, 0.387);
+  border-radius: 40%;
+  right: 30%;
+  top: 15%;
+  background-color: rgb(142, 142, 142);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(50deg);
+}
+
+.mesa .tenedor4 {
+  box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.387);
+  border-radius: 40%;
+  left: 20%;
+  top: 50%;
+  background-color: rgb(142, 142, 142);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(70deg);
+}
+
+.cogido3 {
+  box-shadow: 20px 20px 30px rgba(161, 0, 0, 0.387);
+  border-radius: 40%;
+  left: 20%;
+  top: 50%;
+  background-color: rgba(198, 0, 0, 0.822);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(70deg);
+}
+
+.dejado3 {
+  box-shadow: 20px 20px 30px rgba(135, 128, 128, 0.387);
+  border-radius: 40%;
+  left: 20%;
+  top: 50%;
+  background-color: rgb(142, 142, 142);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(70deg);
+}
+
+.mesa .tenedor2 {
+  box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.387);
+  border-radius: 40%;
+  right: 20%;
+  top: 50%;
+  background-color: rgb(142, 142, 142);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(-70deg);
+}
+
+.cogido1 {
+  box-shadow: 20px 20px 30px rgba(161, 0, 0, 0.387);
+  border-radius: 40%;
+  right: 20%;
+  top: 50%;
+  background-color: rgba(198, 0, 0, 0.822);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(-70deg);
+}
+
+.dejado1 {
+  box-shadow: 20px 20px 30px rgba(135, 128, 128, 0.387);
+  border-radius: 40%;
+  right: 20%;
+  top: 50%;
+  background-color: rgb(142, 142, 142);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(-70deg);
+}
+
+.mesa .tenedor3 {
+  box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.387);
+  border-radius: 40%;
+  right: 45%;
+  bottom: 15%;
+  background-color: rgb(142, 142, 142);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+}
+
+.cogido2 {
+  box-shadow: 20px 20px 30px rgba(161, 0, 0, 0.387);
+  border-radius: 40%;
+  right: 45%;
+  bottom: 15%;
+  background-color: rgba(198, 0, 0, 0.822);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+}
+
+.dejado2 {
+  box-shadow: 20px 20px 30px rgba(135, 128, 128, 0.387);
+  border-radius: 40%;
+  right: 45%;
+  bottom: 15%;
+  background-color: rgb(142, 142, 142);
+  height: 100px;
+  width: 30px;
+  position: absolute;
+}
+
+.divmanejador {
+  padding-bottom: 40px;
+}
+
+.ayuda {
+  padding-right: 20px;
+  margin-top: -80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.ayuda-comiendo {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(198, 0, 0, 0.822);
+}
+
+.ayuda-pensando {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 124, 213, 0.785);
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.ayuda-ocupado {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(198, 0, 0, 0.822);
+}
+
+.ayuda-desocupado {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(142, 142, 142);
+}
