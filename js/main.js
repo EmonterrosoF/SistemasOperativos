@@ -1,4 +1,4 @@
-import Subject from "./await-notify.js";
+import Subject from "../monitor/await-notify.js";
 
 const event = new Subject();
 
@@ -37,11 +37,11 @@ const tenedor5 = document.querySelector(".tenedor5");
 
 let clasesTenedores = [tenedor1, tenedor2, tenedor3, tenedor4, tenedor5];
 
-const filofoso1 = new Worker("./filosofo1.js");
-const filofoso2 = new Worker("./filosofo2.js");
-const filofoso3 = new Worker("./filosofo3.js");
-const filofoso4 = new Worker("./filosofo4.js");
-const filofoso5 = new Worker("./filosofo5.js");
+const filofoso1 = new Worker("../threads/filosofo1.js");
+const filofoso2 = new Worker("../threads/filosofo2.js");
+const filofoso3 = new Worker("../threads/filosofo3.js");
+const filofoso4 = new Worker("../threads/filosofo4.js");
+const filofoso5 = new Worker("../threads/filosofo5.js");
 
 let tenedores = [false, false, false, false, false];
 let pensando = "pensando";
