@@ -1,6 +1,6 @@
 # Algoritmo la cena de los 5 filosofos
 
-Esta es una solucion que le dimos al algoritmo la cena de los 5 filosofos en JavaScript Vanilla
+Esta es una solucion del algoritmo de la cena de los 5 filosofos en JavaScript Vanilla
 
 ![screenShot la cena de los 5 filosofos](/screenShot.png)
 
