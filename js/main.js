@@ -4,7 +4,6 @@ const event = new Subject();
 
 new Typed(".typed", {
   strings: [
-    '<span class="sub-tittle">Edras Monterroso</span>',
     '<span class="sub-tittle"">Thelma Galicia</span>',
     '<span class="sub-tittle"">Rony Quiñones</span>',
   ],
