@@ -52,10 +52,11 @@ body {
 
 .description {
   width: 63%;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 100px;
-  color: rgba(237, 230, 230, 0.918);
+  color: rgba(180, 180, 180, 0.918);
   text-align: justify;
+  line-height: 30px;
 }
 
 header {
